@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site de Estudos</title>
+    <style>
+        /* Definindo estilo para o corpo da página */
+        body {
+            background-color: #4B0082; /* Cor roxa de fundo */
+            color: white; /* Cor do texto em branco */
+            font-family: Arial, sans-serif; /* Fonte padrão */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo para o menu de navegação */
+        nav {
+            background-color: #6A0DAD; /* Subtom de roxo */
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white; /* Cor dos links em branco */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline; /* Sublinha o link ao passar o mouse */
+        }
+
+        /* Estilo para as seções do site */
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        /* Estilo para o formulário de contato */
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #5A009D; /* Outro subtom de roxo */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #6A0DAD; /* Subtom de roxo para o botão */
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #7B1FA2; /* Cor mais clara ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu de navegação -->
+    <nav>
+        <a href="#sobre-mim">Sobre Mim</a>
+        <a href="#formacao">Formação Educacional</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre-mim">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Eu sou o Johnny, tenho 38 anos e moro em Arroio do Meio, uma pequena cidade no interior do Rio Grande do Sul. Sou um grande aficionado em séries, filmes e jogos, e sempre encontro tempo para mergulhar de cabeça em uma porção de livros. Uma de minhas grandes paixões é o RPG. Amo criar e explorar mundos imaginários e viver grandes aventuras com meus amigos através deles. Moro com minha namorada Bruna, com quem estou junto há 15 anos. Temos uma família felina de três gatos maravilhosos: Mia, Luke e Spock. Sou supervisor comercial na Brasrede e amo o que faço!</p>
+    </section>
+
+    <!-- Seção Formação Educacional -->
+    <section id="formacao">
+        <h2>Formação Educacional e Idiomas</h2>
+        <p>Sou estudante de física e ciência de dados na Uninter. Falo Inglês e estou ansioso para começar a aprender russo.</p>
+    </section>
+
+    <!-- Seção Portfólio -->
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <p>Confira meu projeto: <a href="https://jhonnyleite.github.io/MeusGatos/" target="_blank">Meus Gatos</a></p>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form class="contact-form">
+            <!-- Campo para nome -->
+            <input type="text" placeholder="Nome" required>
+            <!-- Campo para email -->
+            <input type="email" placeholder="Email" required>
+            <!-- Área de texto para mensagem -->
+            <textarea placeholder="Mensagem" rows="4" required></textarea>
+            <!-- Botão de envio -->
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</body>
+</html>
